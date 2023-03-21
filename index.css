@@ -1,0 +1,59 @@
+body {
+  background-color: antiquewhite;
+  justify-content: center;
+  align-items: center;
+  display: flex;
+}
+#display {
+  width: 675px;
+  height: 100px;
+  text-align: right;
+  background-color: white;
+  border:ridge;
+  color:#000;
+}
+input {
+  width: 150px;
+  height: 80px;
+  font-size: 75px;
+  border-radius: 10px;
+  margin: 10px;
+  background-color: #000;
+  color: whitesmoke;
+  border-style: none;
+  cursor:pointer;
+}
+input:hover{
+  background-color: whitesmoke;
+  color:black
+}
+#my-calc{
+  margin-left: 225px;
+  justify-content: center;
+}
+h1{
+text-align: center;
+font-size: 80px;
+
+}
+.operator{
+  background-color: cornflowerblue;
+}
+#clear{
+  background-color: green;
+  
+}
+#clear:hover{
+  background-color: red;
+  color: aliceblue;
+}
+#equals{
+  background-color: rgb(53, 53, 230);
+}
+#equals:hover{
+  background-color: green;
+  color: aliceblue;
+}
+#dot{
+  transform: rotate(180deg);
+}

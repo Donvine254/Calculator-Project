@@ -1,0 +1,44 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8" />
+  <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <link rel="stylesheet" href="./index.css" />
+  <script rel="script" src="./script.js"></script>
+  <title>Calculator</title>
+</head>
+
+<body>
+  <!-- <h1>Basic Calculator</h1>-->
+  <form id="my-calc" name="calc">
+    <input id="display" name="display" /><br>
+    <div class="input">
+      <input type="button" id="clear" value="AC" OnClick="calc.display.value=''">
+      <input type="button" id="brackets" class="operator" value="&#40;&#41;" onclick="addBrackets();">
+      <input type="button" id="percent" class="operator" value="&percnt;" onclick="addPercentage();">
+      <input type="button" class="operator" value="&plus;" OnClick="calc.display.value+='+'"><br>
+      <input type="button" value="0" OnClick="calc.display.value+='0'">
+      <input type="button" value="1" OnClick="calc.display.value+='1'">
+      <input type="button" value="2" OnClick="calc.display.value+='2'">
+      <input type="button" class="operator" value="&minus;" OnClick="calc.display.value+='-'"><br>
+
+      <input type="button" value="3" OnClick="calc.display.value+='3'">
+      <input type="button" value="4" OnClick="calc.display.value+='4'">
+      <input type="button" value="5" OnClick="calc.display.value+='5'">
+      <input type="button" class="operator" value="&times;" OnClick="calc.display.value+='*'"><br>
+      <input type="button" value="6" OnClick="calc.display.value+='6'">
+      <input type="button" value="7" OnClick="calc.display.value+='7'">
+      <input type="button" value="8" OnClick="calc.display.value+='8'">
+      <input type="button" class="operator" value="&divide;" OnClick="calc.display.value+='/'">
+      <br>
+      <input type="button" value="9" OnClick="calc.display.value+='9'">
+      <input type="button" id="dot" value="&dot;" onclick="addDot();">
+      <input type="button" class="operator" value="CE" id="delete" onclick="backspace();">
+      <input type="button" id="equals" value="&equals;" OnClick="calc.display.value=eval(calc.display.value);">
+    </div>
+  </form>
+</body>
+
+</html>
