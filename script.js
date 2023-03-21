@@ -1,4 +1,4 @@
-
+//removes the last value in the display
 function backspace() {
   var displayValue = document.getElementById("display").value;
   if (displayValue.length > 0) {
@@ -59,7 +59,7 @@ function addPercent() {
   }
 */
   
-  //addDot function
+  //addDot function. This function adds a dot to the display.
 function addDot() {
   var display = document.forms['calc']['display'];
   var lastChar = display.value;
@@ -71,7 +71,7 @@ function addDot() {
     display.value += '.';
   }
 }
-//another percentage function
+//another percentage function. This function only evaluates the percentage but does not add a percentage to the display
 function addPercentage() {
     var displayValue = calc.display.value.trim();
     if (displayValue === "") {
