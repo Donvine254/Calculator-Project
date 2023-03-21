@@ -1,10 +1,12 @@
 //removes the last value in the display
+//replaced the function with slice function alone
+/*
 function backspace() {
   var displayValue = document.getElementById("display").value;
   if (displayValue.length > 0) {
     document.getElementById("display").value = displayValue.slice(0, -1);
   }
-}
+}*/
 //add brackets function
   function addBrackets() {
     var displayValue = calc.display.value;
