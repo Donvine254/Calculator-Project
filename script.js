@@ -91,3 +91,4 @@ function addPercentage() {
       alert("Invalid format");
     }
   }
+
